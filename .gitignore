@@ -1,5 +1,5 @@
 /global_climate_data/ghcnd_daily/
 
-./ghcnd_daily_com_media.csv
+/ghcnd_daily_com_media.csv
 
-./ghcnd_daily_processado.csv
+/ghcnd_daily_processado.csv
