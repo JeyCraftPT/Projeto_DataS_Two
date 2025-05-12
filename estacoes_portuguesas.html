@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ecdd39b27dbf93099c4c4ea52462c047 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ecdd39b27dbf93099c4c4ea52462c047" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ecdd39b27dbf93099c4c4ea52462c047 = L.map(
+                "map_ecdd39b27dbf93099c4c4ea52462c047",
+                {
+                    center: [39.5, -8.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0ec85fcb0bed54bb34b624324df92fe9 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_0ec85fcb0bed54bb34b624324df92fe9.addTo(map_ecdd39b27dbf93099c4c4ea52462c047);
+        
+    
+            var marker_d8bdc6e792a8e4629297a3a9ed76f423 = L.marker(
+                [38.52, -28.63],
+                {
+}
+            ).addTo(map_ecdd39b27dbf93099c4c4ea52462c047);
+        
+    
+            var icon_129654a2430fb1cb652218072e5f003a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0ed608d38ac617256743d1c2deeb88e6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_952dc9af3b3e1f507ef0ea94ec87acc5 = $(`<div id="html_952dc9af3b3e1f507ef0ea94ec87acc5" style="width: 100.0%; height: 100.0%;">HORTA (AZORES) (PO000008506)</div>`)[0];
+                popup_0ed608d38ac617256743d1c2deeb88e6.setContent(html_952dc9af3b3e1f507ef0ea94ec87acc5);
+            
+        
+
+        marker_d8bdc6e792a8e4629297a3a9ed76f423.bindPopup(popup_0ed608d38ac617256743d1c2deeb88e6)
+        ;
+
+        
+    
+    
+            marker_d8bdc6e792a8e4629297a3a9ed76f423.bindTooltip(
+                `<div>
+                     HORTA (AZORES)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d8bdc6e792a8e4629297a3a9ed76f423.setIcon(icon_129654a2430fb1cb652218072e5f003a);
+            
+    
+            var marker_6c789a90ca169f2ae011baf579cf2f8f = L.marker(
+                [32.63, -16.8997],
+                {
+}
+            ).addTo(map_ecdd39b27dbf93099c4c4ea52462c047);
+        
+    
+            var icon_76b33ffa4512b3f011f9e896e28759d1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_57e534b217c7fa97884bf30924b72229 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e67ea6098685b2db310424621ed81dab = $(`<div id="html_e67ea6098685b2db310424621ed81dab" style="width: 100.0%; height: 100.0%;">FUNCHAL (PO000008522)</div>`)[0];
+                popup_57e534b217c7fa97884bf30924b72229.setContent(html_e67ea6098685b2db310424621ed81dab);
+            
+        
+
+        marker_6c789a90ca169f2ae011baf579cf2f8f.bindPopup(popup_57e534b217c7fa97884bf30924b72229)
+        ;
+
+        
+    
+    
+            marker_6c789a90ca169f2ae011baf579cf2f8f.bindTooltip(
+                `<div>
+                     FUNCHAL
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6c789a90ca169f2ae011baf579cf2f8f.setIcon(icon_76b33ffa4512b3f011f9e896e28759d1);
+            
+    
+            var marker_c5a9e19008fe8da1589968eaf2d85280 = L.marker(
+                [38.7167, -9.15],
+                {
+}
+            ).addTo(map_ecdd39b27dbf93099c4c4ea52462c047);
+        
+    
+            var icon_e445bf623f2d51377ccfd6c1eab8845c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4c8e5bc5208754cc032838dd26ee6c34 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4b12343db026ec3c7b97c8abe2b3696e = $(`<div id="html_4b12343db026ec3c7b97c8abe2b3696e" style="width: 100.0%; height: 100.0%;">LISBOA GEOFISICA (PO000008535)</div>`)[0];
+                popup_4c8e5bc5208754cc032838dd26ee6c34.setContent(html_4b12343db026ec3c7b97c8abe2b3696e);
+            
+        
+
+        marker_c5a9e19008fe8da1589968eaf2d85280.bindPopup(popup_4c8e5bc5208754cc032838dd26ee6c34)
+        ;
+
+        
+    
+    
+            marker_c5a9e19008fe8da1589968eaf2d85280.bindTooltip(
+                `<div>
+                     LISBOA GEOFISICA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c5a9e19008fe8da1589968eaf2d85280.setIcon(icon_e445bf623f2d51377ccfd6c1eab8845c);
+            
+    
+            var marker_138d401cb95cde3815c43f3c5ff1414d = L.marker(
+                [32.683, -16.767],
+                {
+}
+            ).addTo(map_ecdd39b27dbf93099c4c4ea52462c047);
+        
+    
+            var icon_cd708e862e20df1162abb708d6b409f1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_23ba6ef7c59a0b97c15340a868063609 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eb43a04c9239e97057b68fae2c825619 = $(`<div id="html_eb43a04c9239e97057b68fae2c825619" style="width: 100.0%; height: 100.0%;">FUNCHAL/S.CATARINA (POM00008521)</div>`)[0];
+                popup_23ba6ef7c59a0b97c15340a868063609.setContent(html_eb43a04c9239e97057b68fae2c825619);
+            
+        
+
+        marker_138d401cb95cde3815c43f3c5ff1414d.bindPopup(popup_23ba6ef7c59a0b97c15340a868063609)
+        ;
+
+        
+    
+    
+            marker_138d401cb95cde3815c43f3c5ff1414d.bindTooltip(
+                `<div>
+                     FUNCHAL/S.CATARINA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_138d401cb95cde3815c43f3c5ff1414d.setIcon(icon_cd708e862e20df1162abb708d6b409f1);
+            
+    
+            var marker_56bfe3fab7e0f88718790bebd463680a = L.marker(
+                [37.014, -7.966],
+                {
+}
+            ).addTo(map_ecdd39b27dbf93099c4c4ea52462c047);
+        
+    
+            var icon_7d73054feb11a80d3d010865168a8fca = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d821312029590e113ddc6870a4bc4b6f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_413ed6163129c63d2d91ec5be64a9cad = $(`<div id="html_413ed6163129c63d2d91ec5be64a9cad" style="width: 100.0%; height: 100.0%;">FARO (POM00008554)</div>`)[0];
+                popup_d821312029590e113ddc6870a4bc4b6f.setContent(html_413ed6163129c63d2d91ec5be64a9cad);
+            
+        
+
+        marker_56bfe3fab7e0f88718790bebd463680a.bindPopup(popup_d821312029590e113ddc6870a4bc4b6f)
+        ;
+
+        
+    
+    
+            marker_56bfe3fab7e0f88718790bebd463680a.bindTooltip(
+                `<div>
+                     FARO
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_56bfe3fab7e0f88718790bebd463680a.setIcon(icon_7d73054feb11a80d3d010865168a8fca);
+            
+    
+            var marker_25230dfc7a1600deb3fed915d69a0b60 = L.marker(
+                [39.833, -7.483],
+                {
+}
+            ).addTo(map_ecdd39b27dbf93099c4c4ea52462c047);
+        
+    
+            var icon_0e5fa22e6aeb4029f124a6529373080a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_36d611f10f8d8c6bbc79ecae56a46146 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_28a91c35cdafcaebf5facb3b0b807584 = $(`<div id="html_28a91c35cdafcaebf5facb3b0b807584" style="width: 100.0%; height: 100.0%;">CASTELO BRANCO (POM00008570)</div>`)[0];
+                popup_36d611f10f8d8c6bbc79ecae56a46146.setContent(html_28a91c35cdafcaebf5facb3b0b807584);
+            
+        
+
+        marker_25230dfc7a1600deb3fed915d69a0b60.bindPopup(popup_36d611f10f8d8c6bbc79ecae56a46146)
+        ;
+
+        
+    
+    
+            marker_25230dfc7a1600deb3fed915d69a0b60.bindTooltip(
+                `<div>
+                     CASTELO BRANCO
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_25230dfc7a1600deb3fed915d69a0b60.setIcon(icon_0e5fa22e6aeb4029f124a6529373080a);
+            
+</script>
+</html>

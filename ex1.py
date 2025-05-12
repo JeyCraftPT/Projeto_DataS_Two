@@ -1,8 +1,11 @@
 import pandas as pd
 import numpy as np
+import warnings
+
+warnings.filterwarnings("ignore")
 
 # Caminho para o ficheiro original
-input_path = 'ghcnd_daily.csv'
+input_path = 'global_climate_data/ghcnd_daily/ghcnd_daily.csv'
 output_path = 'ghcnd_daily_processado.csv'
 
 # Colunas a manter
