@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-input_path = 'global_climate_data/ghcnd_daily/ghcnd_daily.csv'
+input_path = 'ghcnd_daily.csv'
 columns_to_keep = ['id', 'year', 'month', 'element'] + [f'value{i}' for i in range(1, 32)]
 value_cols = [f'value{i}' for i in range(1, 32)]
 
