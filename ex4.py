@@ -17,7 +17,11 @@ for i, chunk in enumerate(pd.read_csv(file_path, chunksize=chunk_size)):
     # Calcular a média das temperaturas diárias por linha (ignorando NaNs)
     chunk['daily_avg_temp'] = chunk[value_cols].mean(axis=1)
     
+    # Mostrar as primeiras 5 linhas do primeiro chunk
+    if i == 0:
+        print(chunk.head())
+    
     # Guardar com a nova coluna
     chunk.to_csv(output_path, mode='a', header=(i == 0), index=False)
 
-print("✅ Temperatura média diária calculada e guardada em 'ghcnd_daily_com_media.csv'.")
+print("✅ Temperatura média diária (em °C) calculada e guardada em 'ghcnd_daily_com_media.csv'.")

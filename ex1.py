@@ -1,5 +1,3 @@
-# processar_dados.py
-
 import pandas as pd
 import numpy as np
 
@@ -15,12 +13,17 @@ value_cols = [f'value{i}' for i in range(1, 32)]
 def process_chunk(chunk):
     chunk.replace(-9999, np.nan, inplace=True)
     chunk = chunk[columns_to_keep]
+
+    # Otimização de tipos
     chunk['year'] = chunk['year'].astype('int16')
     chunk['month'] = chunk['month'].astype('int8')
     chunk['element'] = chunk['element'].astype('category')
     chunk['id'] = chunk['id'].astype('category')
+
+    # Converter os valores e dividir por 10 para obter °C
     for col in value_cols:
-        chunk[col] = chunk[col].astype('float32')
+        chunk[col] = chunk[col].astype('float32') / 10.0
+
     return chunk
 
 # Processar em chunks e guardar no novo ficheiro
@@ -30,4 +33,4 @@ with pd.read_csv(input_path, chunksize=chunk_size) as reader:
         processed = process_chunk(chunk)
         processed.to_csv(output_path, mode='a', header=(i == 0), index=False)
 
-print("✅ Processamento completo. Dados guardados em 'ghcnd_daily_processado.csv'.")
+print("✅ Processamento completo. Dados guardados em 'ghcnd_daily_processado.csv' com temperaturas em °C.")

@@ -24,3 +24,10 @@
 - Talvez fazer o 9 mas sem pressa.
 - Resolver o filtro das queries com ajuda do output de verificação que meti.
 - Escrever relatório na segunda.
+
+
+
+### BONUS
+- ex 1-1 mostra diferença de espaço usado
+- ex 2-1 mostra tabela com null values e percentagem
+- ex 8-1 mostra todas as estações portuguesas num mapa
