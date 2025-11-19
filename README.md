@@ -1,33 +1,54 @@
-### O que precisa de acontecer
+# 🌍 Global Climate Data Analysis
 
-#### No ex6.py 
-- Quando corres ele vai te dar um csv com os dados das cidades portuguesas selecionadas.
-> Dei-lhe o nome de estacoesPT.csv
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white) ![Folium](https://img.shields.io/badge/Folium-77B829?style=for-the-badge&logo=leaflet&logoColor=white)
 
-#### No ex7.py 
-- Substituímos o id destas cidades, para o nome delas
-> Após correr, se quiseres verificar que o output aparece direitinho, arrasta para a direita, pois paraece no fim da linha "FARO"
-> Dei-lhe o nome id_estacoesPT.csv
+A Data Science project developed to analyze global climate data, with a specific focus on filtering, processing, and visualizing weather stations in **Portugal**. This project demonstrates data cleaning, CSV manipulation, and geospatial visualization using Python.
 
-#### No ex8.py (REVER)
-- Para começar --> pip install folium
-- O folium é uma biblioteca que conforme os dados que lhe damos cria um mapa html com as localizaçõs portuguesas que filtramos
-- Quando corres deve fazer um mapa.html que abres nos ficheiros e te mostra o nosso mapinha
-- PROBLEMA: a query presente dá-nos um resultado ATOA na espanha n sei pq. Quando tentei filtrar a query para que fossem somente os nomes que queremos, não aparecia Lisboa nem Horta, porque de certeza que no ficheiro .csv não estão sozinhos. ex: LISBOA(Cascais) type shi
-----
-- No mapa aparecem alguns mesmo fora de portugal tipo américa do norte ou assim 
+---
 
-### O que fiz
-- Exercícios 6, 7, 8 
+## 📝 Project Overview
 
-### TO-DO
-- Talvez fazer o 9 mas sem pressa.
-- Resolver o filtro das queries com ajuda do output de verificação que meti.
-- Escrever relatório na segunda.
+This repository contains a series of Python scripts (`ex1.py` to `ex8.py`) that perform progressive data analysis tasks on a global climate dataset.
 
+**Key Features:**
+* 📊 **Data Cleaning:** Handling missing values and optimizing data storage.
+* 🇵🇹 **Filtering:** Extracting specific data for Portuguese weather stations.
+* 🗺️ **Visualization:** Generating interactive HTML maps using **Folium** to plot station locations.
 
+---
 
-### BONUS
-- ex 1-1 mostra diferença de espaço usado
-- ex 2-1 mostra tabela com null values e percentagem
-- ex 8-1 mostra todas as estações portuguesas num mapa
+## 📂 File Structure & Script Guide
+
+| Script | Description | Output |
+| :--- | :--- | :--- |
+| `ex1-1.py` | Analyzes dataset memory usage and space differences. | Console Output |
+| `ex2-1.py` | Calculates percentage of null values in the dataset. | Console Output |
+| `ex6.py` | Filters global data to extract Portuguese cities/stations. | `estacoesPT.csv` |
+| `ex7.py` | Cleans data by replacing Station IDs with City Names. | `id_estacoesPT.csv` |
+| `ex8.py` | Visualizes filtered stations on an interactive map. | `mapa.html` |
+| `estacoes_portuguesas.html` | Generated map showing station locations. | HTML File |
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Ensure you have Python installed along with the necessary libraries:
+
+```bash
+pip install pandas folium notebook
+```
+
+### Usage
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/JeyCraftPT/Projeto_DataS_Two.git](https://github.com/JeyCraftPT/Projeto_DataS_Two.git)
+    ```
+Run the scripts: You can run individual scripts to process the data. For example, to generate the map:
+```bash
+python ex8.py
+```
+
+View the Map: Open the generated estacoes_portuguesas.html file in your web browser to explore the interactive map.
